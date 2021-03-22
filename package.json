@@ -1,7 +1,7 @@
 {
-  "name": "bootbot",
+  "name": "better-bootbot",
   "version": "1.1.0",
-  "description": "Facebook Messenger Bot Framework",
+  "description": "Better Facebook Messenger Bot Framework",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive test/*",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Charca/bootbot.git"
+    "url": "git+https://github.com/AlexWalder/better-bootbot.git"
   },
   "keywords": [
     "messenger",
@@ -19,12 +19,12 @@
     "bot",
     "facebook"
   ],
-  "author": "Maxi Ferreira <charca@gmail.com>",
+  "author": "Alex Walder <github@fasterfood.online>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Charca/bootbot/issues"
+    "url": "https://github.com/AlexWalder/better-bootbot/issues"
   },
-  "homepage": "https://github.com/Charca/bootbot#readme",
+  "homepage": "https://github.com/AlexWalder/better-bootbot#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "config": "^1.21.0",

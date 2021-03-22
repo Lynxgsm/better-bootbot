@@ -8,7 +8,9 @@ BootBot is a simple but powerful JavaScript Framework to build Facebook Messenge
 |---|---|---|---|---|---|---|---|
 
 
-**[ :speech_balloon: Questions / Comments? Join our Slack channel!](https://bootbot-slack-channel.herokuapp.com/)**
+
+## This version contains quality of life changes added to the original forked repo Charca/bootbot, including:
+- The bot will now destroy any prior conversations with a user when creating a new one. This prevents multiple conversations existing and listening in parallel and talking over each other when the user replies.
 
 ## Features
 
@@ -788,6 +790,7 @@ $ node echo-example.js
 ## Credits
 
 Made with :beer: by Maxi Ferreira - [@Charca](https://twitter.com/charca)
+Extended by Alex Walder - (githb)
 
 ## License
 
