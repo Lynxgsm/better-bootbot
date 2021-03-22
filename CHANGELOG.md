@@ -4,7 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.1.1] - 2021-03-23
+### Added
+- Remove existing conversation for user if one is active upon creation of another. Convo vars are lost.
 
 ## [1.1.0] - 2020-08-20
 ### Added
@@ -67,7 +69,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Added generic error message for when Messenger's API responds with an 'error' node.
 
-[Unreleased]: https://github.com/Charca/bootbot/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/Charca/bootbot/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/AlexWalder/better-bootbot/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/Charca/bootbot/compare/v1.0.16...v1.1.0
 [1.0.16]: https://github.com/Charca/bootbot/compare/v1.0.15...v1.0.16
 [1.0.15]: https://github.com/Charca/bootbot/compare/v1.0.14...v1.0.15

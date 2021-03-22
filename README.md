@@ -7,10 +7,8 @@ BootBot is a simple but powerful JavaScript Framework to build Facebook Messenge
 | [Features][] | [Usage][] | [Video Example][] | [Getting Started][] | [Documentation][] | [Examples][] | [Credits][] | [License][] |
 |---|---|---|---|---|---|---|---|
 
-
-
 ## This version contains quality of life changes added to the original forked repo Charca/bootbot, including:
-- The bot will now destroy any prior conversations with a user when creating a new one. This prevents multiple conversations existing and listening in parallel and talking over each other when the user replies.
+- Will now destroy any prior conversations with a user when creating a new one. This prevents multiple conversations existing and listening in parallel and talking over each other when the user replies. This is useful for creating a new convo on an external event, within a call further down the stack, or out of band of the prior convo.
 
 ## Features
 
@@ -555,6 +553,8 @@ bot.hear('hello', (payload, chat) => {
 Conversations provide a convinient method to ask questions and handle the user's answer. They're useful when you want to set a flow of different questions/answers, like an onboarding process or when taking an order for example. Conversations also provide a method to save the information that you need from the user's answers, so the interaction is always in context.
 
 Messages sent by the user won't trigger a global `message`, `postback`, `attachment` or `quick_reply` event if there's an active conversation with that user. Answers must be managed by the conversation.
+
+Starting a new conversation before ending the last will destroy any prior conversations with a user when creating a new one. This prevents multiple conversations existing and listening in parallel and talking over each other when the user replies.
 
 #### `bot.conversation()`
 
