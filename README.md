@@ -23,12 +23,12 @@ BootBot is a simple but powerful JavaScript Framework to build Facebook Messenge
 ## Usage
 
 ```
-$ npm install bootbot --save
+$ npm install better-bootbot --save
 ```
 
 ```javascript
 'use strict';
-const BootBot = require('bootbot');
+const BootBot = require('better-bootbot');
 
 const bot = new BootBot({
   accessToken: 'FB_ACCESS_TOKEN',
@@ -52,14 +52,14 @@ Creating a Giphy Chat Bot in 3 minutes:
 
 ## Getting Started
 
-- Install BootBot via NPM, create a new `index.js`, require BootBot and create a new bot instance using your Facebook Page's / App's `accessToken`, `verifyToken` and `appSecret`:
+- Install better-bootbot via NPM, create a new `index.js`, require better-bootbot and create a new bot instance using your Facebook Page's / App's `accessToken`, `verifyToken` and `appSecret`:
 
 **Note:** If you don't know how to get these tokens, take a look at Facebook's [Quick Start Guide](https://developers.facebook.com/docs/messenger-platform/guides/quick-start) or check out [this issue](https://github.com/Charca/bootbot/issues/56).
 
 ```javascript
 // index.js
 'use strict';
-const BootBot = require('bootbot');
+const BootBot = require('better-bootbot');
 
 const bot = new BootBot({
   accessToken: 'FB_ACCESS_TOKEN',
@@ -550,7 +550,7 @@ bot.hear('hello', (payload, chat) => {
 
 ### Conversations
 
-Conversations provide a convinient method to ask questions and handle the user's answer. They're useful when you want to set a flow of different questions/answers, like an onboarding process or when taking an order for example. Conversations also provide a method to save the information that you need from the user's answers, so the interaction is always in context.
+Conversations provide a convinient method to ask questions and handle the user's answer. They're useful when you want to set a flow of different questions/answers, like an onboarding process or when taking an order for example. Conversations also provide a method to save the information that you need from the user's answers, so the interaction is always in context. Starting a new conversation will destroy any previous conversation, including all saved information in the previous conversation.
 
 Messages sent by the user won't trigger a global `message`, `postback`, `attachment` or `quick_reply` event if there's an active conversation with that user. Answers must be managed by the conversation.
 
@@ -790,7 +790,7 @@ $ node echo-example.js
 ## Credits
 
 Made with :beer: by Maxi Ferreira - [@Charca](https://twitter.com/charca)
-Extended by Alex Walder - (githb)
+Extended by Alex Walder
 
 ## License
 
